@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2F7E9962213D804A00727A7C /* Barcode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E9961213D804A00727A7C /* Barcode.storyboard */; };
 		2F7E9965213D807500727A7C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E9964213D807500727A7C /* Profile.storyboard */; };
+		2F7E996A213D843300727A7C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E9969213D843300727A7C /* UserModel.swift */; };
+		2F7E996C213D845900727A7C /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E996B213D845900727A7C /* BarcodeViewController.swift */; };
 		BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */; };
 		BDEB9B12213D7B1A009D5B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B10213D7B1A009D5B27 /* Main.storyboard */; };
 		BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		2F7E9961213D804A00727A7C /* Barcode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Barcode.storyboard; sourceTree = "<group>"; };
 		2F7E9964213D807500727A7C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		2F7E9969213D843300727A7C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		2F7E996B213D845900727A7C /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
 		BDEB9B09213D7B1A009D5B27 /* HopeathonAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopeathonAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEB9B11213D7B1A009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +54,7 @@
 		2F7E9966213D822E00727A7C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2F7E9969213D843300727A7C /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -57,6 +62,7 @@
 		2F7E9968213D824C00727A7C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2F7E996B213D845900727A7C /* BarcodeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,7 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F7E996A213D843300727A7C /* UserModel.swift in Sources */,
 				BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */,
+				2F7E996C213D845900727A7C /* BarcodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
