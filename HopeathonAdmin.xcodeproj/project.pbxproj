@@ -11,6 +11,7 @@
 		2F7E9965213D807500727A7C /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F7E9964213D807500727A7C /* Profile.storyboard */; };
 		2F7E996A213D843300727A7C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E9969213D843300727A7C /* UserModel.swift */; };
 		2F7E996C213D845900727A7C /* BarcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7E996B213D845900727A7C /* BarcodeViewController.swift */; };
+		9DE93C782FD818D35E83DB05 /* Pods_HopeathonAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F8F28D1A4953F082C5AD8 /* Pods_HopeathonAdmin.framework */; };
 		BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */; };
 		BDEB9B12213D7B1A009D5B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B10213D7B1A009D5B27 /* Main.storyboard */; };
 		BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */; };
@@ -22,6 +23,9 @@
 		2F7E9964213D807500727A7C /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		2F7E9969213D843300727A7C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2F7E996B213D845900727A7C /* BarcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeViewController.swift; sourceTree = "<group>"; };
+		31D3F8FC0C390765F9DA17E6 /* Pods-HopeathonAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopeathonAdmin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HopeathonAdmin/Pods-HopeathonAdmin.debug.xcconfig"; sourceTree = "<group>"; };
+		938F8F28D1A4953F082C5AD8 /* Pods_HopeathonAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopeathonAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21B43A564EA986BDFA6CB03 /* Pods-HopeathonAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopeathonAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopeathonAdmin/Pods-HopeathonAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		BDEB9B09213D7B1A009D5B27 /* HopeathonAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopeathonAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEB9B11213D7B1A009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,12 +39,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DE93C782FD818D35E83DB05 /* Pods_HopeathonAdmin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08E2813268D1CA8F018DF83D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				938F8F28D1A4953F082C5AD8 /* Pods_HopeathonAdmin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F7E9963213D805700727A7C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +80,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		9224CACF9AB35352C5E3515B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31D3F8FC0C390765F9DA17E6 /* Pods-HopeathonAdmin.debug.xcconfig */,
+				B21B43A564EA986BDFA6CB03 /* Pods-HopeathonAdmin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BDEB9B00213D7B1A009D5B27 = {
 			isa = PBXGroup;
 			children = (
 				BDEB9B0B213D7B1A009D5B27 /* HopeathonAdmin */,
 				BDEB9B0A213D7B1A009D5B27 /* Products */,
+				9224CACF9AB35352C5E3515B /* Pods */,
+				08E2813268D1CA8F018DF83D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDEB9B1B213D7B1B009D5B27 /* Build configuration list for PBXNativeTarget "HopeathonAdmin" */;
 			buildPhases = (
+				5A8BB176F860E48A50270DA4 /* [CP] Check Pods Manifest.lock */,
 				BDEB9B05213D7B1A009D5B27 /* Sources */,
 				BDEB9B06213D7B1A009D5B27 /* Frameworks */,
 				BDEB9B07213D7B1A009D5B27 /* Resources */,
+				EA6215D1B3D11A5923BB2141 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +190,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5A8BB176F860E48A50270DA4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HopeathonAdmin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6215D1B3D11A5923BB2141 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HopeathonAdmin/Pods-HopeathonAdmin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HopeathonAdmin/Pods-HopeathonAdmin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BDEB9B05213D7B1A009D5B27 /* Sources */ = {
@@ -314,6 +383,7 @@
 		};
 		BDEB9B1C213D7B1B009D5B27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D3F8FC0C390765F9DA17E6 /* Pods-HopeathonAdmin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +402,7 @@
 		};
 		BDEB9B1D213D7B1B009D5B27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B21B43A564EA986BDFA6CB03 /* Pods-HopeathonAdmin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
