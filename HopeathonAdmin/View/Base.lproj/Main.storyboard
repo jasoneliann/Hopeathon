@@ -29,10 +29,10 @@
             </objects>
             <point key="canvasLocation" x="-291" y="584"/>
         </scene>
-        <!--PatientList-->
+        <!--Patient-->
         <scene sceneID="4Qy-6x-TsA">
             <objects>
-                <viewControllerPlaceholder storyboardName="PatientList" id="1CK-z6-gym" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Patient" id="1CK-z6-gym" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="iuZ-DK-hzj"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60A-W7-cRr" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -15,6 +15,7 @@
 		BD24C613213E09A100B76D73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD24C612213E09A100B76D73 /* LoginViewController.swift */; };
 		BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD24C618213E145900B76D73 /* GoogleService-Info.plist */; };
 		BDB3361C213E222B00CB32E1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3361B213E222B00CB32E1 /* MainTabBarController.swift */; };
+		BDB3361E213E41BD00CB32E1 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB3361D213E41BD00CB32E1 /* Patient.storyboard */; };
 		BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */; };
 		BDEB9B12213D7B1A009D5B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B10213D7B1A009D5B27 /* Main.storyboard */; };
 		BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */; };
@@ -32,13 +33,13 @@
 		BD24C612213E09A100B76D73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD24C618213E145900B76D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDB3361B213E222B00CB32E1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		BDB3361D213E41BD00CB32E1 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
 		BDEB9B09213D7B1A009D5B27 /* HopeathonAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopeathonAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEB9B11213D7B1A009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDEB9B16213D7B1B009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEB9B18213D7B1B009D5B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF52D177213E0DDE0022862D /* PatientList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +68,7 @@
 				BDEB9B10213D7B1A009D5B27 /* Main.storyboard */,
 				2F7E9961213D804A00727A7C /* Barcode.storyboard */,
 				2F7E9964213D807500727A7C /* Profile.storyboard */,
-				CF52D177213E0DDE0022862D /* PatientList.storyboard */,
+				BDB3361D213E41BD00CB32E1 /* Patient.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB3361E213E41BD00CB32E1 /* Patient.storyboard in Resources */,
 				BDEB9B17213D7B1B009D5B27 /* LaunchScreen.storyboard in Resources */,
 				BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */,
 				BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */,
@@ -434,7 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZ3HWHN35P;
+				DEVELOPMENT_TEAM = NYHN574BS2;
 				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,7 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TZ3HWHN35P;
+				DEVELOPMENT_TEAM = NYHN574BS2;
 				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
