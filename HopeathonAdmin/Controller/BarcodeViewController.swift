@@ -37,8 +37,6 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     self.navigationController?.navigationBar.prefersLargeTitles = true
 
-        
-        
         // Creating Session
         let session = AVCaptureSession()
         
