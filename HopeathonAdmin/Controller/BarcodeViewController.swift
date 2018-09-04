@@ -13,12 +13,31 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     var video = AVCaptureVideoPreviewLayer()
     
+    @IBOutlet weak var backgroundTransparent: UIImageView!
+    
+    var cameraView : UIView!
+    
+    var isFirstCapture : Bool = true
+    
+    @IBOutlet weak var contentView: UIView!
+    
+    
+    @IBAction func scanIDPasienButton(_ sender: Any) {
+        performSegue(withIdentifier: "barcodeToID", sender: self)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        isFirstCapture = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .yellow
-        
         // Do any additional setup after loading the view.
+    
+    self.navigationController?.navigationBar.prefersLargeTitles = true
+
+        
         
         // Creating Session
         let session = AVCaptureSession()
@@ -35,6 +54,7 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         {
             print("Error")
         }
+        
         let output = AVCaptureMetadataOutput()
         session.addOutput(output)
         
@@ -46,27 +66,48 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         video.frame = view.layer.bounds
         view.layer.addSublayer(video)
         
+        view.bringSubview(toFront: contentView)
+        
+        
         session.startRunning()
     }
     
     internal func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
       
-        print("/detect")
-        if metadataObjects != nil && metadataObjects.count != nil
+        if metadataObjects.count != 0
         {
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject
             {
-                if object.type == AVMetadataObject.ObjectType.qr
+                if object.type == AVMetadataObject.ObjectType.qr && isFirstCapture
                 {
-                    let alert = UIAlertController(title: "Scan QR Code", message: object.stringValue, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
-                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: {(nil) in
-                        
-                        UIPasteboard.general.string = object.stringValue
-                    }))
+                    print("detect")
+                    isFirstCapture = false
+                    if object.stringValue == "1" {
+                        performSegue(withIdentifier: "qrToDetail", sender: nil)
+                    }
                     
-                    present(alert, animated: true, completion: nil)
+                    else
+                    {
+                        isFirstCapture = true
+                        
+                        let alert = UIAlertController(title: "QR Code Salah", message: "Pastikan QR Code yang Di-Scan Sudah Benar", preferredStyle: .alert)
+                        
+                        alert.addAction(UIAlertAction(title: "Ulangi", style: .default, handler: nil))
+                        
+                        present(alert, animated: true, completion: nil)
+                    }
+                    
+                    
+//                    let alert = UIAlertController(title: "Scan QR Code", message: object.stringValue, preferredStyle: .alert)
+//                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
+//                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: {(nil) in
+//
+//                        UIPasteboard.general.string = object.stringValue
+//                    }))
+                    
+//                    present(alert, animated: true, completion: nil)
                 }
+                
             }
         }
     }
