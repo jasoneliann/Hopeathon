@@ -5,9 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -84,7 +82,7 @@
         <!--Detail Pasien-->
         <scene sceneID="zrf-UA-oPM">
             <objects>
-                <viewController id="Uzw-8b-nD0" customClass="DetailPasienViewController" customModule="HopeathonAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailPasien" id="Uzw-8b-nD0" customClass="DetailPasienViewController" customModule="HopeathonAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="82p-6M-4yf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -283,9 +281,8 @@
     </scenes>
     <resources>
         <image name="backgroundQR" width="375" height="641"/>
-
         <image name="barcode-3" width="25" height="25"/>
-
+        <image name="user-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XrT-c3-7Lt"/>

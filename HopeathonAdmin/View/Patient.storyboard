@@ -39,11 +39,20 @@
                     <navigationItem key="navigationItem" id="3qs-pa-osL"/>
                     <connections>
                         <outlet property="tableView" destination="kyf-6A-Bk5" id="qqu-qh-nEh"/>
+                        <segue destination="JIt-Ca-bwF" kind="show" identifier="toDetailPatient" id="b3y-LB-AGX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ljw-Fh-0qU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1148" y="166.8665667166417"/>
+        </scene>
+        <!--DetailPasien-->
+        <scene sceneID="HkG-F1-OkU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Barcode" referencedIdentifier="DetailPasien" id="JIt-Ca-bwF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rIy-Ir-2Hk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="166"/>
         </scene>
         <!--Daftar Pasien-->
         <scene sceneID="3i9-EG-zxO">

@@ -123,6 +123,17 @@ extension PatientViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("asd")
+        performSegue(withIdentifier: "toDetailPatient", sender: listUser[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toDetailPatient" {
+            let dest = segue.destination as! DetailPasienViewController
+            dest.userModel = sender as! UserModel
+            print("hello")
+        }
         
     }
     

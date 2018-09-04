@@ -23,12 +23,19 @@ class DetailPasienViewController: UIViewController {
     
     @IBOutlet weak var medicalRecord: UIButton!
     
-    
+    var userModel : UserModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        guard let user = userModel else {return}
+        golonganDarah.text = "O"
+        //            usiaLabel.text = Date().convertToDate(date: user.dateBirth)
+        usiaLabel.text = "\(Date().convertToDate(date: user.dateBirth))"
+        tinggiLabel.text = "\(user.tinggiBadan) cm"
+        beratLabel.text = "\(user.beratBadan) kg"
     }
     
 
