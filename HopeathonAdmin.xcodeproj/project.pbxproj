@@ -14,6 +14,7 @@
 		2FB5A6E8213E46AC008C1A9C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5A6E7213E46AC008C1A9C /* ProfileViewController.swift */; };
 		2FB5A6ED213E4F8C008C1A9C /* TextFieldExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5A6EC213E4F8C008C1A9C /* TextFieldExt.swift */; };
 		2FC04C31213E85EC001A2002 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC04C30213E85EC001A2002 /* UIButtonExt.swift */; };
+		2FD5031C213EBBD2007C715B /* TextFieldDesignExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD5031B213EBBD2007C715B /* TextFieldDesignExt.swift */; };
 		9DE93C782FD818D35E83DB05 /* Pods_HopeathonAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F8F28D1A4953F082C5AD8 /* Pods_HopeathonAdmin.framework */; };
 		BD24C613213E09A100B76D73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD24C612213E09A100B76D73 /* LoginViewController.swift */; };
 		BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD24C618213E145900B76D73 /* GoogleService-Info.plist */; };
@@ -38,6 +39,7 @@
 		2FB5A6E7213E46AC008C1A9C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		2FB5A6EC213E4F8C008C1A9C /* TextFieldExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExt.swift; sourceTree = "<group>"; };
 		2FC04C30213E85EC001A2002 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		2FD5031B213EBBD2007C715B /* TextFieldDesignExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDesignExt.swift; sourceTree = "<group>"; };
 		31D3F8FC0C390765F9DA17E6 /* Pods-HopeathonAdmin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopeathonAdmin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HopeathonAdmin/Pods-HopeathonAdmin.debug.xcconfig"; sourceTree = "<group>"; };
 		938F8F28D1A4953F082C5AD8 /* Pods_HopeathonAdmin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HopeathonAdmin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21B43A564EA986BDFA6CB03 /* Pods-HopeathonAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopeathonAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopeathonAdmin/Pods-HopeathonAdmin.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				2FB5A6EC213E4F8C008C1A9C /* TextFieldExt.swift */,
 				2FC04C30213E85EC001A2002 /* UIButtonExt.swift */,
+				2FD5031B213EBBD2007C715B /* TextFieldDesignExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				BDB33626213E45D600CB32E1 /* PatientViewController.swift in Sources */,
 				2F7E996A213D843300727A7C /* UserModel.swift in Sources */,
 				CF52D17E213E51140022862D /* ScanIDViewController.swift in Sources */,
+				2FD5031C213EBBD2007C715B /* TextFieldDesignExt.swift in Sources */,
 				BDB3361C213E222B00CB32E1 /* MainTabBarController.swift in Sources */,
 				BDB33623213E43FB00CB32E1 /* PatientTableViewCell.swift in Sources */,
 				BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */,
