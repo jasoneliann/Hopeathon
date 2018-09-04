@@ -102,12 +102,9 @@
 			children = (
 				2F7E996B213D845900727A7C /* BarcodeViewController.swift */,
 				BD24C612213E09A100B76D73 /* LoginViewController.swift */,
-<<<<<<< HEAD
 				2FB5A6E7213E46AC008C1A9C /* ProfileViewController.swift */,
-=======
 				CF52D17D213E51140022862D /* ScanIDViewController.swift */,
 				BDB33625213E45D600CB32E1 /* PatientViewController.swift */,
->>>>>>> 2460a371b107fa542805e3e7a407c2c64062a291
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -475,13 +472,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = TZ3HWHN35P;
-=======
-				DEVELOPMENT_TEAM = DK7HPF3UVL;
->>>>>>> 2460a371b107fa542805e3e7a407c2c64062a291
 				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,13 +492,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = TZ3HWHN35P;
-=======
-				DEVELOPMENT_TEAM = DK7HPF3UVL;
->>>>>>> 2460a371b107fa542805e3e7a407c2c64062a291
 				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
