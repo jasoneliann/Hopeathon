@@ -16,6 +16,9 @@
 		BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD24C618213E145900B76D73 /* GoogleService-Info.plist */; };
 		BDB3361C213E222B00CB32E1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3361B213E222B00CB32E1 /* MainTabBarController.swift */; };
 		BDB3361E213E41BD00CB32E1 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB3361D213E41BD00CB32E1 /* Patient.storyboard */; };
+		BDB33623213E43FB00CB32E1 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */; };
+		BDB33624213E43FB00CB32E1 /* PatientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB33622213E43FB00CB32E1 /* PatientTableViewCell.xib */; };
+		BDB33626213E45D600CB32E1 /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB33625213E45D600CB32E1 /* PatientViewController.swift */; };
 		BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */; };
 		BDEB9B12213D7B1A009D5B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B10213D7B1A009D5B27 /* Main.storyboard */; };
 		BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */; };
@@ -35,6 +38,9 @@
 		BD24C618213E145900B76D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDB3361B213E222B00CB32E1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BDB3361D213E41BD00CB32E1 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
+		BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		BDB33622213E43FB00CB32E1 /* PatientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientTableViewCell.xib; sourceTree = "<group>"; };
+		BDB33625213E45D600CB32E1 /* PatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
 		BDEB9B09213D7B1A009D5B27 /* HopeathonAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopeathonAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEB9B11213D7B1A009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				2F7E9969213D843300727A7C /* UserModel.swift */,
+				BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */,
+				BDB33622213E43FB00CB32E1 /* PatientTableViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +97,7 @@
 				2F7E996B213D845900727A7C /* BarcodeViewController.swift */,
 				BD24C612213E09A100B76D73 /* LoginViewController.swift */,
 				CF52D17D213E51140022862D /* ScanIDViewController.swift */,
+				BDB33625213E45D600CB32E1 /* PatientViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -206,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB3361E213E41BD00CB32E1 /* Patient.storyboard in Resources */,
+				BDB33624213E43FB00CB32E1 /* PatientTableViewCell.xib in Resources */,
 				BDEB9B17213D7B1B009D5B27 /* LaunchScreen.storyboard in Resources */,
 				BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */,
 				BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */,
@@ -290,9 +300,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD24C613213E09A100B76D73 /* LoginViewController.swift in Sources */,
+				BDB33626213E45D600CB32E1 /* PatientViewController.swift in Sources */,
 				2F7E996A213D843300727A7C /* UserModel.swift in Sources */,
 				CF52D17E213E51140022862D /* ScanIDViewController.swift in Sources */,
 				BDB3361C213E222B00CB32E1 /* MainTabBarController.swift in Sources */,
+				BDB33623213E43FB00CB32E1 /* PatientTableViewCell.swift in Sources */,
 				BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */,
 				2F7E996C213D845900727A7C /* BarcodeViewController.swift in Sources */,
 			);

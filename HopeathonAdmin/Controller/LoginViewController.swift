@@ -20,11 +20,17 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
         setupGoogleSignInButton()
         
         googleSignIn.addTarget(self, action: #selector(loginWithGoogle), for: .touchUpInside)
+        
+        GIDSignIn.sharedInstance().signInSilently()
+        
+
     }
     
     @objc func loginWithGoogle() {
@@ -80,10 +86,15 @@ extension LoginViewController : GIDSignInDelegate {
             let dict = [
                 "uid" : uid,
                 "email" : email,
+                "dateBirth" : "1536054273",
+                "gender" : "L",
                 "fullName" : fullName
             ]
             
             ref.child("user/\(uid)").setValue(dict)
+            
+            UserDefaults.standard.setValue("\(uid)", forKey: "uid")
+            
             print("masuk")
             self.performSegue(withIdentifier: self.segueToLandingPage, sender: self)
             print("segue")
