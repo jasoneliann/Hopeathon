@@ -151,7 +151,7 @@
         <scene sceneID="k6B-F6-k09">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zMO-9B-Idt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Barcode" image="barcode-2" id="rqs-7o-0rf"/>
+                    <tabBarItem key="tabBarItem" title="Barcode" image="barcode-3" id="rqs-7o-0rf"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7nY-FS-lmC">
@@ -170,7 +170,7 @@
     </scenes>
     <resources>
         <image name="backgroundQR" width="375" height="641"/>
-        <image name="barcode-2" width="25" height="25"/>
+        <image name="barcode-3" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XrT-c3-7Lt"/>
