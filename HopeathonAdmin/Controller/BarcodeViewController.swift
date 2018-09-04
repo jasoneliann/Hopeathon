@@ -7,13 +7,25 @@
 //
 
 import UIKit
+import AVFoundation
 
-class BarcodeViewController: UIViewController {
+class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
+    var video = AVCaptureVideoPreviewLayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        // Creating Session
+        let session = AVCaptureSession()
+        
+        // Define Capture Device
+        let captureDevice = AVCaptureDevice.default(for: .video)
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
