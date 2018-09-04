@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,18 +82,129 @@
         <!--Detail Pasien-->
         <scene sceneID="zrf-UA-oPM">
             <objects>
-                <viewController id="Uzw-8b-nD0" sceneMemberID="viewController">
+                <viewController id="Uzw-8b-nD0" customClass="DetailPasienViewController" customModule="HopeathonAdmin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="82p-6M-4yf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-3" translatesAutoresizingMaskIntoConstraints="NO" id="w2P-as-pSu">
+                                <rect key="frame" x="137" y="122" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zlp-7C-uJ8"/>
+                                    <constraint firstAttribute="height" constant="100" id="sNT-e4-yMY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx7-Kc-k5r">
+                                <rect key="frame" x="129" y="230" width="117" height="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SY2-wV-Ozz">
+                                <rect key="frame" x="16" y="283" width="343" height="40"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CN4-Xt-zIN">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="xdv-M3-5uZ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gol Darah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N0-S8-iBV">
+                                        <rect key="frame" x="116" y="0.0" width="111" height="40"/>
+                                        <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEK-Oh-qov">
+                                        <rect key="frame" x="232" y="0.0" width="111" height="40"/>
+                                        <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="hya-SY-u3F"/>
+                                    <constraint firstAttribute="height" constant="40" id="uvN-QX-iiB"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Waj-fw-6Uh">
+                                <rect key="frame" x="16" y="331" width="343" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tinggi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhq-9G-isM">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="40"/>
+                                        <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="f8z-y3-0qW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsE-t8-czB">
+                                        <rect key="frame" x="174" y="0.0" width="169" height="40"/>
+                                        <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Hi2-pi-wqZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="epU-kv-7pg"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAW-iF-hfM">
+                                <rect key="frame" x="16" y="379" width="165" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Imunisasi"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sc-xC-P9I">
+                                <rect key="frame" x="194" y="379" width="165" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Riwayat Penyakit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-u6-isR">
+                                <rect key="frame" x="16" y="552" width="343" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Medical Record"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hLm-7M-1yY" firstAttribute="trailing" secondItem="w2P-as-pSu" secondAttribute="trailing" constant="138" id="15W-F9-sUP"/>
+                            <constraint firstItem="Waj-fw-6Uh" firstAttribute="centerX" secondItem="hLm-7M-1yY" secondAttribute="centerX" id="BNq-tu-Yrc"/>
+                            <constraint firstItem="Waj-fw-6Uh" firstAttribute="top" secondItem="SY2-wV-Ozz" secondAttribute="bottom" constant="8" id="Di9-NW-4Oh"/>
+                            <constraint firstItem="lx7-Kc-k5r" firstAttribute="centerX" secondItem="hLm-7M-1yY" secondAttribute="centerX" id="GOd-Ji-y62"/>
+                            <constraint firstItem="SY2-wV-Ozz" firstAttribute="top" secondItem="lx7-Kc-k5r" secondAttribute="bottom" constant="30" id="U3a-YJ-tdE"/>
+                            <constraint firstItem="w2P-as-pSu" firstAttribute="leading" secondItem="hLm-7M-1yY" secondAttribute="leading" constant="137" id="XUw-3x-d13"/>
+                            <constraint firstItem="SY2-wV-Ozz" firstAttribute="centerX" secondItem="hLm-7M-1yY" secondAttribute="centerX" id="ihg-cu-pVm"/>
+                            <constraint firstItem="w2P-as-pSu" firstAttribute="top" secondItem="hLm-7M-1yY" secondAttribute="top" constant="34" id="njH-Nb-Hlh"/>
+                            <constraint firstItem="lx7-Kc-k5r" firstAttribute="top" secondItem="w2P-as-pSu" secondAttribute="bottom" constant="8" id="uJN-Mz-bE8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hLm-7M-1yY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Detail Pasien" id="NIa-fR-kFf"/>
+                    <connections>
+                        <outlet property="beratLabel" destination="qsE-t8-czB" id="0Wc-sL-bOd"/>
+                        <outlet property="fotoPasien" destination="w2P-as-pSu" id="xcg-t7-zZ5"/>
+                        <outlet property="genderImage" destination="CN4-Xt-zIN" id="Z2d-eW-gq4"/>
+                        <outlet property="golonganDarah" destination="9N0-S8-iBV" id="byZ-V0-Y3s"/>
+                        <outlet property="imunisasi" destination="bAW-iF-hfM" id="DgC-dJ-OAm"/>
+                        <outlet property="medicalRecord" destination="8AK-u6-isR" id="DeX-XU-sse"/>
+                        <outlet property="riwayatPenyakit" destination="7Sc-xC-P9I" id="CJg-7h-m0l"/>
+                        <outlet property="tinggiLabel" destination="dhq-9G-isM" id="9LD-q4-6tc"/>
+                        <outlet property="usiaLabel" destination="gEK-Oh-qov" id="YCS-sC-Aof"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uK-nW-haN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3167" y="368"/>
+            <point key="canvasLocation" x="3165.5999999999999" y="367.98029556650249"/>
         </scene>
         <!--Input ID-->
         <scene sceneID="vfd-Jl-IlS">
@@ -169,6 +281,7 @@
     </scenes>
     <resources>
         <image name="backgroundQR" width="375" height="641"/>
+        <image name="user-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XrT-c3-7Lt"/>
