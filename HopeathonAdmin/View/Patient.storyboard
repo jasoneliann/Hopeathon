@@ -45,11 +45,11 @@
             </objects>
             <point key="canvasLocation" x="1148" y="166.8665667166417"/>
         </scene>
-        <!--Item-->
+        <!--Daftar Pasien-->
         <scene sceneID="3i9-EG-zxO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6N0-GD-Bbh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="W0E-bI-x02"/>
+                    <tabBarItem key="tabBarItem" title="Daftar Pasien" image="list-1" id="W0E-bI-x02"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6b9-4A-6ez">
@@ -66,4 +66,7 @@
             <point key="canvasLocation" x="208.80000000000001" y="166.8665667166417"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="list-1" width="24" height="24"/>
+    </resources>
 </document>

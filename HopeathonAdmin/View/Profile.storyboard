@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -96,11 +97,11 @@
             </objects>
             <point key="canvasLocation" x="725.60000000000002" y="9.6059113300492616"/>
         </scene>
-        <!--Profile-->
+        <!--Profil-->
         <scene sceneID="HdW-rq-5eu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xM3-Y5-DRo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="brA-5r-i3x"/>
+                    <tabBarItem key="tabBarItem" title="Profil" image="profile-1" id="brA-5r-i3x"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cnT-nl-0ux">
@@ -118,6 +119,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="profile-1" width="24" height="24"/>
         <image name="user-3" width="512" height="512"/>
     </resources>
 </document>

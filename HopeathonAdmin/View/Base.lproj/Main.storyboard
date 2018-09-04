@@ -28,7 +28,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CVX-vr-Kbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-291" y="584"/>
+            <point key="canvasLocation" x="-3" y="584"/>
         </scene>
         <!--Patient-->
         <scene sceneID="4Qy-6x-TsA">
@@ -38,7 +38,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60A-W7-cRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="584"/>
+            <point key="canvasLocation" x="-264" y="584"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="kmd-eh-ZoO">
@@ -77,8 +77,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="cbi-f0-h98" kind="relationship" relationship="viewControllers" id="KUc-MG-wjE"/>
-                        <segue destination="7ug-Pc-CQX" kind="relationship" relationship="viewControllers" id="F7h-oS-R7M"/>
-                        <segue destination="1CK-z6-gym" kind="relationship" relationship="viewControllers" id="dDO-dI-Eaw"/>
+                        <segue destination="1CK-z6-gym" kind="relationship" relationship="viewControllers" id="f7e-lK-wTM"/>
+                        <segue destination="7ug-Pc-CQX" kind="relationship" relationship="viewControllers" id="8YX-E9-v4d"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="idJ-yy-07O" userLabel="First Responder" sceneMemberID="firstResponder"/>
