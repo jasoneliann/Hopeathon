@@ -19,10 +19,14 @@
 		BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD24C618213E145900B76D73 /* GoogleService-Info.plist */; };
 		BDB3361C213E222B00CB32E1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3361B213E222B00CB32E1 /* MainTabBarController.swift */; };
 		BDB3361E213E41BD00CB32E1 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB3361D213E41BD00CB32E1 /* Patient.storyboard */; };
+		BDB33623213E43FB00CB32E1 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */; };
+		BDB33624213E43FB00CB32E1 /* PatientTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDB33622213E43FB00CB32E1 /* PatientTableViewCell.xib */; };
+		BDB33626213E45D600CB32E1 /* PatientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB33625213E45D600CB32E1 /* PatientViewController.swift */; };
 		BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */; };
 		BDEB9B12213D7B1A009D5B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B10213D7B1A009D5B27 /* Main.storyboard */; };
 		BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */; };
 		BDEB9B17213D7B1B009D5B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B15213D7B1B009D5B27 /* LaunchScreen.storyboard */; };
+		CF52D17E213E51140022862D /* ScanIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52D17D213E51140022862D /* ScanIDViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,12 +44,16 @@
 		BD24C618213E145900B76D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BDB3361B213E222B00CB32E1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BDB3361D213E41BD00CB32E1 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
+		BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
+		BDB33622213E43FB00CB32E1 /* PatientTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientTableViewCell.xib; sourceTree = "<group>"; };
+		BDB33625213E45D600CB32E1 /* PatientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientViewController.swift; sourceTree = "<group>"; };
 		BDEB9B09213D7B1A009D5B27 /* HopeathonAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HopeathonAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEB9B0C213D7B1A009D5B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDEB9B11213D7B1A009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDEB9B16213D7B1B009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEB9B18213D7B1B009D5B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF52D17D213E51140022862D /* ScanIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanIDViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				2F7E9969213D843300727A7C /* UserModel.swift */,
+				BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */,
+				BDB33622213E43FB00CB32E1 /* PatientTableViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,7 +102,12 @@
 			children = (
 				2F7E996B213D845900727A7C /* BarcodeViewController.swift */,
 				BD24C612213E09A100B76D73 /* LoginViewController.swift */,
+<<<<<<< HEAD
 				2FB5A6E7213E46AC008C1A9C /* ProfileViewController.swift */,
+=======
+				CF52D17D213E51140022862D /* ScanIDViewController.swift */,
+				BDB33625213E45D600CB32E1 /* PatientViewController.swift */,
+>>>>>>> 2460a371b107fa542805e3e7a407c2c64062a291
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -220,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDB3361E213E41BD00CB32E1 /* Patient.storyboard in Resources */,
+				BDB33624213E43FB00CB32E1 /* PatientTableViewCell.xib in Resources */,
 				BDEB9B17213D7B1B009D5B27 /* LaunchScreen.storyboard in Resources */,
 				BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */,
 				BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */,
@@ -306,8 +322,11 @@
 				2FB5A6E8213E46AC008C1A9C /* ProfileViewController.swift in Sources */,
 				2FB5A6ED213E4F8C008C1A9C /* TextFieldExt.swift in Sources */,
 				BD24C613213E09A100B76D73 /* LoginViewController.swift in Sources */,
+				BDB33626213E45D600CB32E1 /* PatientViewController.swift in Sources */,
 				2F7E996A213D843300727A7C /* UserModel.swift in Sources */,
+				CF52D17E213E51140022862D /* ScanIDViewController.swift in Sources */,
 				BDB3361C213E222B00CB32E1 /* MainTabBarController.swift in Sources */,
+				BDB33623213E43FB00CB32E1 /* PatientTableViewCell.swift in Sources */,
 				BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */,
 				2F7E996C213D845900727A7C /* BarcodeViewController.swift in Sources */,
 				2FC04C31213E85EC001A2002 /* UIButtonExt.swift in Sources */,
@@ -456,9 +475,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = TZ3HWHN35P;
+=======
+				DEVELOPMENT_TEAM = DK7HPF3UVL;
+>>>>>>> 2460a371b107fa542805e3e7a407c2c64062a291
 				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,9 +499,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				DEVELOPMENT_TEAM = TZ3HWHN35P;
+=======
+				DEVELOPMENT_TEAM = DK7HPF3UVL;
+>>>>>>> 2460a371b107fa542805e3e7a407c2c64062a291
 				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

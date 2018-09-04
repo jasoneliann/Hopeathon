@@ -57,12 +57,16 @@
                         <viewLayoutGuide key="safeArea" id="ccx-9z-pmZ"/>
                     </view>
                     <connections>
-                        <segue destination="BsE-h2-VN0" kind="show" identifier="toLandingPage" animates="NO" id="Yvw-aR-YuV"/>
+                        <segue destination="BsE-h2-VN0" kind="show" identifier="toLandingPage" animates="NO" id="dS4-cq-1xV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bV9-PR-Iff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="-1111" y="148"/>
+=======
+            <point key="canvasLocation" x="-1322" y="132"/>
+>>>>>>> 2460a371b107fa542805e3e7a407c2c64062a291
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="FyF-7r-qbB">
