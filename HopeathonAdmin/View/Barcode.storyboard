@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zMO-9B-Idt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zMO-9B-Idt">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -150,7 +151,7 @@
         <scene sceneID="k6B-F6-k09">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zMO-9B-Idt" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Barcode" id="rqs-7o-0rf"/>
+                    <tabBarItem key="tabBarItem" title="Barcode" image="barcode-2" id="rqs-7o-0rf"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7nY-FS-lmC">
@@ -169,6 +170,7 @@
     </scenes>
     <resources>
         <image name="backgroundQR" width="375" height="641"/>
+        <image name="barcode-2" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XrT-c3-7Lt"/>
