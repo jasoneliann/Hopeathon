@@ -54,14 +54,14 @@ class PatientViewController: UIViewController {
             let tempValue = self.convertToDictionary(value: value)
             print("hello = \(tempValue)")
             
-            var tempNewData : [(String, String)] = [(String, String)]()
+            var tempNewData : [(String, String, String)] = [(String, String, String)]()
             
             for user in tempValue {
                 print("user = \(user)")
                 
                 guard let newUser = user.value as? [String : Any] else {return}
                 print("newUser = \(newUser)")
-                tempNewData.append(("\(newUser["location"]!)", "\(newUser["timestamp"]!)"))
+                tempNewData.append(("\(newUser["beratBadan"]!)", "\(newUser["timestamp"]!)", "\(newUser["tinggi"])"))
                 print("tampUser = \(tempNewData)")
             }
             
@@ -71,7 +71,7 @@ class PatientViewController: UIViewController {
                 
                 for newData in tempNewData {
                     
-                    let newUser = UserModel(location: newData.0, timestamp: newData.1, id: "\(tempValue0["uid"]!)", email: "\(tempValue0["email"]!)", fullName: "\(tempValue0["fullName"]!)", dateBirth: "\(tempValue0["dateBirth"]!)", gender: "\(tempValue0["gender"]!)")
+                    let newUser = UserModel(timestamp: newData.1, id: "\(tempValue0["uid"]!)", email: "\(tempValue0["email"]!)", fullName: "\(tempValue0["fullName"]!)", dateBirth: "\(tempValue0["dateBirth"]!)", gender: "\(tempValue0["gender"]!)", beratBadan: Float(newData.0)!, tinggiBadan: Float(newData.2)!)
                     
                     self.listUser.append(newUser)
                 }
