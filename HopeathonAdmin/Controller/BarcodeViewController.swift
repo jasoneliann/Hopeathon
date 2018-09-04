@@ -10,8 +10,6 @@ import UIKit
 import AVFoundation
 
 class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
-
-    @IBOutlet weak var viewQRCode: UIView!
     
     var video = AVCaptureVideoPreviewLayer()
     
@@ -51,7 +49,7 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     private func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
       
         print("/detect")
-        if metadataObjects != nil && metadataObjects.count != 0
+        if metadataObjects != nil && metadataObjects.count != nil
         {
             if let object = metadataObjects[0] as? AVMetadataMachineReadableCodeObject
             {
