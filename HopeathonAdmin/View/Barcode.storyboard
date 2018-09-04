@@ -30,11 +30,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Scan ID Pasien"/>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KWQ-RN-oAk">
+                                <rect key="frame" x="67.666666666666686" y="286" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="L0d-wB-ca7"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Ag-Sd-S8m"/>
+                    <connections>
+                        <outlet property="viewQRCode" destination="KWQ-RN-oAk" id="XaJ-dE-w76"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibc-Dt-tfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
