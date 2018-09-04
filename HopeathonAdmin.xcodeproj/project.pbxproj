@@ -27,6 +27,7 @@
 		BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */; };
 		BDEB9B17213D7B1B009D5B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B15213D7B1B009D5B27 /* LaunchScreen.storyboard */; };
 		CF52D17E213E51140022862D /* ScanIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF52D17D213E51140022862D /* ScanIDViewController.swift */; };
+		CFCDD0E4213EACA100CC2C37 /* DetailPasienViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCDD0E3213EACA100CC2C37 /* DetailPasienViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		BDEB9B16213D7B1B009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEB9B18213D7B1B009D5B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF52D17D213E51140022862D /* ScanIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanIDViewController.swift; sourceTree = "<group>"; };
+		CFCDD0E3213EACA100CC2C37 /* DetailPasienViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPasienViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2F7E996B213D845900727A7C /* BarcodeViewController.swift */,
+				CFCDD0E3213EACA100CC2C37 /* DetailPasienViewController.swift */,
 				BD24C612213E09A100B76D73 /* LoginViewController.swift */,
 				2FB5A6E7213E46AC008C1A9C /* ProfileViewController.swift */,
 				CF52D17D213E51140022862D /* ScanIDViewController.swift */,
@@ -326,6 +329,7 @@
 				BDB33623213E43FB00CB32E1 /* PatientTableViewCell.swift in Sources */,
 				BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */,
 				2F7E996C213D845900727A7C /* BarcodeViewController.swift in Sources */,
+				CFCDD0E4213EACA100CC2C37 /* DetailPasienViewController.swift in Sources */,
 				2FC04C31213E85EC001A2002 /* UIButtonExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
