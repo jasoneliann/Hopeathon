@@ -44,6 +44,7 @@ class PatientViewController: UIViewController {
     fileprivate func readDatabase() {
         
         guard let userID = Auth.auth().currentUser?.uid else {return}
+//        let userID : String = "XuprP0q1cXZJ0YBKTRb1DVaRGWD3"
         print("userId = \(userID)")
         let ref : DatabaseReference = Database.database().reference()
         
