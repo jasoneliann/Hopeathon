@@ -15,6 +15,9 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        view.backgroundColor = .yellow
+        
         // Do any additional setup after loading the view.
         
         // Creating Session
@@ -46,7 +49,7 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         session.startRunning()
     }
     
-    private func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+    internal func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
       
         print("/detect")
         if metadataObjects != nil && metadataObjects.count != nil
@@ -57,7 +60,9 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                 {
                     let alert = UIAlertController(title: "Scan QR Code", message: object.stringValue, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
-                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: {(nil) in UIPasteboard.general.string = object.stringValue
+                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: {(nil) in
+                        
+                        UIPasteboard.general.string = object.stringValue
                     }))
                     
                     present(alert, animated: true, completion: nil)

@@ -8,4 +8,6 @@ target 'HopeathonAdmin' do
   # Pods for HopeathonAdmin
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'GoogleSignIn'
 end
