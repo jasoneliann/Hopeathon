@@ -14,11 +14,13 @@ import FirebaseAuth
 
 class LoginViewController: UIViewController {
     
+    @IBOutlet weak var logInButton: UIButton!
     //MARK : - Properties
     let segueToLandingPage : String = "toLandingPage"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.logInButton.designButtonOne()
         
         
         
