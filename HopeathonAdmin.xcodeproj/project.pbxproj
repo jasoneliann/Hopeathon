@@ -472,15 +472,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = NYHN574BS2;
 				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-=======
-				DEVELOPMENT_TEAM = TZ3HWHN35P;
-				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
->>>>>>> 0d58bc37b3f9c76d644dc66093bb80c41ab99c3b
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,15 +492,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-<<<<<<< HEAD
 				DEVELOPMENT_TEAM = NYHN574BS2;
 				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-=======
-				DEVELOPMENT_TEAM = TZ3HWHN35P;
-				INFOPLIST_FILE = HopeathonAdmin/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
->>>>>>> 0d58bc37b3f9c76d644dc66093bb80c41ab99c3b
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
