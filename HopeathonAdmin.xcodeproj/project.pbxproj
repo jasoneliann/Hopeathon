@@ -17,6 +17,8 @@
 		BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B13213D7B1B009D5B27 /* Assets.xcassets */; };
 		BDEB9B17213D7B1B009D5B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDEB9B15213D7B1B009D5B27 /* LaunchScreen.storyboard */; };
 		CF52D176213E0BEB0022862D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF52D175213E0BEB0022862D /* Login.storyboard */; };
+		CF52D178213E0DDE0022862D /* PatientList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF52D177213E0DDE0022862D /* PatientList.storyboard */; };
+		CF52D17A213E0F9D0022862D /* PatientDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF52D179213E0F9D0022862D /* PatientDetail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		BDEB9B16213D7B1B009D5B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDEB9B18213D7B1B009D5B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF52D175213E0BEB0022862D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		CF52D177213E0DDE0022862D /* PatientList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientList.storyboard; sourceTree = "<group>"; };
+		CF52D179213E0F9D0022862D /* PatientDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientDetail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +66,9 @@
 				BDEB9B10213D7B1A009D5B27 /* Main.storyboard */,
 				2F7E9961213D804A00727A7C /* Barcode.storyboard */,
 				2F7E9964213D807500727A7C /* Profile.storyboard */,
+				CF52D177213E0DDE0022862D /* PatientList.storyboard */,
 				CF52D175213E0BEB0022862D /* Login.storyboard */,
+				CF52D179213E0F9D0022862D /* PatientDetail.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,10 +192,12 @@
 			files = (
 				BDEB9B17213D7B1B009D5B27 /* LaunchScreen.storyboard in Resources */,
 				BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */,
+				CF52D178213E0DDE0022862D /* PatientList.storyboard in Resources */,
 				CF52D176213E0BEB0022862D /* Login.storyboard in Resources */,
 				2F7E9965213D807500727A7C /* Profile.storyboard in Resources */,
 				2F7E9962213D804A00727A7C /* Barcode.storyboard in Resources */,
 				BDEB9B12213D7B1A009D5B27 /* Main.storyboard in Resources */,
+				CF52D17A213E0F9D0022862D /* PatientDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
