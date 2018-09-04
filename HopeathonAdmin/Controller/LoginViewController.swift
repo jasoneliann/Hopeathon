@@ -15,20 +15,21 @@ import FirebaseAuth
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var logInButton: UIButton!
+    
+    @IBOutlet weak var loggedInButton: UIButton!
+    
     //MARK : - Properties
     let segueToLandingPage : String = "toLandingPage"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.logInButton.designButtonOne()
-        
-        
+        self.loggedInButton.designButtonOne()
         
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
-        setupGoogleSignInButton()
         
-        googleSignIn.addTarget(self, action: #selector(loginWithGoogle), for: .touchUpInside)
+        logInButton.addTarget(self, action: #selector(loginWithGoogle), for: .touchUpInside)
         
         GIDSignIn.sharedInstance().signInSilently()
         
@@ -38,12 +39,6 @@ class LoginViewController: UIViewController {
     @objc func loginWithGoogle() {
         GIDSignIn.sharedInstance().signIn()
     }
-    
-    let googleSignIn : GIDSignInButton = {
-        let button = GIDSignInButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
     
 }
 
@@ -109,19 +104,5 @@ extension LoginViewController : GIDSignInDelegate {
         // ...
     }
     
-    
-}
-
-
-//MARK : - SetupViews
-extension LoginViewController {
-    
-    fileprivate func setupGoogleSignInButton() {
-        view.addSubview(googleSignIn)
-        googleSignIn.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        googleSignIn.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        googleSignIn.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        googleSignIn.heightAnchor.constraint(equalToConstant: 100).isActive = true
-    }
     
 }

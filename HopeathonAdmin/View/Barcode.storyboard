@@ -27,18 +27,17 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan QR Code Pasien" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCu-jM-gmt">
-                                        <rect key="frame" x="82" y="224" width="209" height="23"/>
+                                        <rect key="frame" x="92" y="224" width="189" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZW-Pi-PXI">
-                                        <rect key="frame" x="87" y="642" width="200" height="35"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZW-Pi-PXI">
+                                        <rect key="frame" x="47" y="621" width="280" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
-                                        <state key="normal" title="Scan ID Pasien">
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                        <state key="normal" title="SCAN ID PASIEN">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -55,6 +54,7 @@
                     <connections>
                         <outlet property="backgroundTransparent" destination="hA0-jc-WpQ" id="Bcs-hN-J9F"/>
                         <outlet property="contentView" destination="oai-SH-qaX" id="Z7r-PK-6iE"/>
+                        <outlet property="scanIDPasienButton" destination="xZW-Pi-PXI" id="4US-yo-CId"/>
                         <segue destination="FxV-IR-3rn" kind="show" identifier="barcodeToID" id="Eyr-3R-Ejg"/>
                         <segue destination="Uzw-8b-nD0" kind="show" identifier="qrToDetail" id="XrT-c3-7Lt"/>
                     </connections>
@@ -62,22 +62,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibc-Dt-tfF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="932" y="139.65517241379311"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="iH0-3u-EV0">
-            <objects>
-                <navigationController id="8WO-kK-qf2" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s2u-e0-6Yp">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Uzw-8b-nD0" kind="relationship" relationship="rootViewController" id="Bby-Id-rw5"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mlD-ih-PvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2250" y="-218"/>
         </scene>
         <!--Detail Pasien-->
         <scene sceneID="zrf-UA-oPM">
@@ -101,23 +85,23 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SY2-wV-Ozz">
-                                <rect key="frame" x="16" y="283" width="343" height="40"/>
+                                <rect key="frame" x="16" y="283" width="343" height="20"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Female" translatesAutoresizingMaskIntoConstraints="NO" id="CN4-Xt-zIN">
-                                        <rect key="frame" x="0.0" y="0.0" width="111" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="xdv-M3-5uZ"/>
+                                            <constraint firstAttribute="height" constant="20" id="xdv-M3-5uZ"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N0-S8-iBV">
-                                        <rect key="frame" x="116" y="0.0" width="111" height="40"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                                        <rect key="frame" x="116" y="0.0" width="111" height="20"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 Bulan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEK-Oh-qov">
-                                        <rect key="frame" x="232" y="0.0" width="111" height="40"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="28"/>
+                                        <rect key="frame" x="232" y="0.0" width="111" height="20"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -125,26 +109,25 @@
                                 <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="hya-SY-u3F"/>
-                                    <constraint firstAttribute="height" constant="40" id="uvN-QX-iiB"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Waj-fw-6Uh">
-                                <rect key="frame" x="16" y="335" width="343" height="40"/>
+                                <rect key="frame" x="16" y="315" width="343" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120 Cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhq-9G-isM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120 cm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhq-9G-isM">
                                         <rect key="frame" x="0.0" y="0.0" width="169" height="40"/>
-                                        <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.38039215686274508" green="0.84313725490196079" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="f8z-y3-0qW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qsE-t8-czB">
                                         <rect key="frame" x="174" y="0.0" width="169" height="40"/>
-                                        <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                        <color key="backgroundColor" red="0.85490196078431369" green="0.80392156862745101" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -155,27 +138,22 @@
                                     <constraint firstAttribute="height" constant="40" id="epU-kv-7pg"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAW-iF-hfM">
-                                <rect key="frame" x="16" y="379" width="169" height="165"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" backgroundImage="Imunisasi"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sc-xC-P9I">
-                                <rect key="frame" x="190" y="379" width="169" height="165"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" backgroundImage="Riwayat Penyakit"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-u6-isR">
                                 <rect key="frame" x="16" y="572" width="343" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.12513578349999999" green="0.79503067620000001" blue="0.80275176530000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
-                                <state key="normal" title="Medical Records">
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                <state key="normal" title="REKAM MEDIS">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Imunisasi" translatesAutoresizingMaskIntoConstraints="NO" id="MPx-RI-BVm">
+                                <rect key="frame" x="16" y="379" width="169" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Riwayat Penyakit" translatesAutoresizingMaskIntoConstraints="NO" id="Jh2-tf-Ehc">
+                                <rect key="frame" x="190" y="379" width="169" height="165"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -197,16 +175,17 @@
                         <outlet property="fotoPasien" destination="w2P-as-pSu" id="xcg-t7-zZ5"/>
                         <outlet property="genderImage" destination="CN4-Xt-zIN" id="Z2d-eW-gq4"/>
                         <outlet property="golonganDarah" destination="9N0-S8-iBV" id="byZ-V0-Y3s"/>
-                        <outlet property="imunisasi" destination="bAW-iF-hfM" id="DgC-dJ-OAm"/>
+                        <outlet property="imunisasiView" destination="MPx-RI-BVm" id="28f-br-g8F"/>
+                        <outlet property="labelUsername" destination="lx7-Kc-k5r" id="WAq-Or-Ltk"/>
                         <outlet property="medicalRecord" destination="8AK-u6-isR" id="DeX-XU-sse"/>
-                        <outlet property="riwayatPenyakit" destination="7Sc-xC-P9I" id="CJg-7h-m0l"/>
+                        <outlet property="riwayatPenyakitView" destination="Jh2-tf-Ehc" id="ABd-u5-9h0"/>
                         <outlet property="tinggiLabel" destination="dhq-9G-isM" id="9LD-q4-6tc"/>
                         <outlet property="usiaLabel" destination="gEK-Oh-qov" id="YCS-sC-Aof"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uK-nW-haN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3165.5999999999999" y="367.98029556650249"/>
+            <point key="canvasLocation" x="2202" y="497"/>
         </scene>
         <!--Input ID-->
         <scene sceneID="vfd-Jl-IlS">
@@ -217,31 +196,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Masukkan ID Pasien" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lN0-SL-97a">
-                                <rect key="frame" x="91" y="348" width="193" height="23"/>
+                                <rect key="frame" x="111" y="348" width="154" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contoh : #19014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baR-YF-VUN">
-                                <rect key="frame" x="156" y="429" width="62" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="8"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="#IDPasien" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebd-OU-Tbr">
-                                <rect key="frame" x="91" y="391" width="193" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="XuprP0q1cXZJ0YBKTRb1DVaRGWD3" placeholder="19014" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebd-OU-Tbr" customClass="TextFieldDesignExt" customModule="HopeathonAdmin" customModuleProvider="target">
+                                <rect key="frame" x="47" y="384" width="280" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="id-1"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VF2-0k-8Bu">
-                                <rect key="frame" x="154" y="642" width="67" height="35"/>
+                                <rect key="frame" x="47" y="473" width="280" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
-                                <state key="normal" title="Proses"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="12"/>
+                                <state key="normal" title="PROSES"/>
                                 <connections>
                                     <action selector="prosesAction:" destination="FxV-IR-3rn" eventType="touchUpInside" id="PZ4-nM-Ghw"/>
                                 </connections>
@@ -253,6 +231,7 @@
                     <navigationItem key="navigationItem" title="Input ID" id="h8y-xB-K0R"/>
                     <connections>
                         <outlet property="inputIDPasien" destination="Ebd-OU-Tbr" id="M2a-vc-ynS"/>
+                        <outlet property="processActionButton" destination="VF2-0k-8Bu" id="e1e-gX-M5v"/>
                         <segue destination="Uzw-8b-nD0" kind="show" identifier="prosesID" id="uBb-3A-CKr"/>
                     </connections>
                 </viewController>
@@ -287,6 +266,7 @@
         <image name="Riwayat Penyakit" width="169" height="165"/>
         <image name="backgroundQR" width="375" height="641"/>
         <image name="barcode-3" width="25" height="25"/>
+        <image name="id-1" width="25" height="25"/>
         <image name="user-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>

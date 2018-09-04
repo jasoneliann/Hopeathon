@@ -21,6 +21,7 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     @IBOutlet weak var contentView: UIView!
     
+    @IBOutlet weak var scanIDPasienButton: UIButton!
     
     @IBAction func scanIDPasienButton(_ sender: Any) {
         performSegue(withIdentifier: "barcodeToID", sender: self)
@@ -34,6 +35,7 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        scanIDPasienButton.designButtonOne()
     
     self.navigationController?.navigationBar.prefersLargeTitles = true
 
@@ -68,6 +70,9 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         
         
         session.startRunning()
+        
+        view.bringSubview(toFront: scanIDPasienButton)
+        
     }
     
     internal func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
@@ -80,20 +85,24 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
                 {
                     print("detect")
                     isFirstCapture = false
-                    if object.stringValue == "1" {
-                        performSegue(withIdentifier: "qrToDetail", sender: nil)
-                    }
+                    print("ini stringValue = \(object.stringValue)")
                     
-                    else
-                    {
-                        isFirstCapture = true
-                        
-                        let alert = UIAlertController(title: "QR Code Salah", message: "Pastikan QR Code yang Di-Scan Sudah Benar", preferredStyle: .alert)
-                        
-                        alert.addAction(UIAlertAction(title: "Ulangi", style: .default, handler: nil))
-                        
-                        present(alert, animated: true, completion: nil)
-                    }
+                    performSegue(withIdentifier: "qrToDetail", sender: object.stringValue)
+                    
+//                    if object.stringValue == "1" {
+//                        performSegue(withIdentifier: "qrToDetail", sender: nil)
+//                    }
+//
+//                    else
+//                    {
+//                        isFirstCapture = true
+//
+//                        let alert = UIAlertController(title: "QR Code Salah", message: "Pastikan QR Code yang Di-Scan Sudah Benar", preferredStyle: .alert)
+//
+//                        alert.addAction(UIAlertAction(title: "Ulangi", style: .default, handler: nil))
+//
+//                        present(alert, animated: true, completion: nil)
+//                    }
                     
                     
 //                    let alert = UIAlertController(title: "Scan QR Code", message: object.stringValue, preferredStyle: .alert)
@@ -110,6 +119,13 @@ class BarcodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         }
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "qrToDetail" {
+            let dest = segue.destination as! DetailPasienViewController
+            dest.userId = sender as! String
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

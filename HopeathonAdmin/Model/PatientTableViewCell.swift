@@ -19,9 +19,8 @@ class PatientTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        imageViewPatient.layer.cornerRadius = imageViewPatient.bounds.width / 2
-        imageViewPatient.backgroundColor = .blue
-        
+//        imageViewPatient.layer.cornerRadius = imageViewPatient.bounds.width / 2
+        imageViewPatient.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

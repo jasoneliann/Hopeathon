@@ -18,6 +18,7 @@ class PatientViewController: UIViewController {
     @IBOutlet weak var tableView : UITableView!
     
     var listUser : [UserModel] = [UserModel]()
+    var selectedImage : UIImage = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,10 +108,9 @@ extension PatientViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: idCellProfile, for: indexPath) as! PatientTableViewCell
         cell.labelName.text = listUser[indexPath.row].fullName
-//        cell.labelAge.text = Date().getDateNow(unixtimeInterval: listUser[indexPath.row].dateBirth)
         cell.labelAge.text = Date().setDifferenceDate(timestampPast: Int(listUser[indexPath.row].dateBirth)!)
         cell.labelGender.text = (listUser[indexPath.row].gender == "L" ? "Laki-Laki" : "Perempuan")
-        cell.backgroundColor = .red
+        cell.imageViewPatient.image = UIImage(named: "image")
         return cell
     }
     
@@ -123,15 +123,19 @@ extension PatientViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("asd")
+        
+        let cell = tableView.cellForRow(at: indexPath) as! PatientTableViewCell
+        guard let image = cell.imageViewPatient.image else {return}
+        self.selectedImage = image
+        
         performSegue(withIdentifier: "toDetailPatient", sender: listUser[indexPath.row])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
         if segue.identifier == "toDetailPatient" {
             let dest = segue.destination as! DetailPasienViewController
             dest.userModel = sender as! UserModel
+            dest.imageProfile = selectedImage
             print("hello")
         }
         

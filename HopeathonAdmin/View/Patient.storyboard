@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Patient View Controller-->
+        <!--Daftar Pasien-->
         <scene sceneID="jDR-uo-WpA">
             <objects>
                 <viewController id="kRK-0G-3PD" customClass="PatientViewController" customModule="HopeathonAdmin" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d6d-tn-631"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3qs-pa-osL"/>
+                    <navigationItem key="navigationItem" title="Daftar Pasien" id="3qs-pa-osL"/>
                     <connections>
                         <outlet property="tableView" destination="kyf-6A-Bk5" id="qqu-qh-nEh"/>
                         <segue destination="JIt-Ca-bwF" kind="show" identifier="toDetailPatient" id="b3y-LB-AGX"/>

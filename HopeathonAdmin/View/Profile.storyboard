@@ -89,6 +89,7 @@
                         <outlet property="addedProfileImage" destination="zRS-L7-K3m" id="auQ-en-5zi"/>
                         <outlet property="detailDraftNavBar" destination="NQB-eH-aAh" id="qna-FC-IUY"/>
                         <outlet property="idKaderTextField" destination="D9Y-J6-Lac" id="M2G-dh-nw7"/>
+                        <outlet property="labelFullName" destination="pEt-Ae-g8T" id="wkF-Aa-SeT"/>
                         <outlet property="posyanduTextField" destination="0i6-2x-uJm" id="Agn-nv-KSZ"/>
                         <outlet property="profileImageView" destination="U0o-5f-pNX" id="atd-Sg-blj"/>
                     </connections>

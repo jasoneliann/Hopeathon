@@ -19,6 +19,8 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var addedProfileImage: UIButton!
     
+    @IBOutlet weak var labelFullName: UILabel!
+    
     @IBAction func addedProfileButton(_ sender: Any) {
         
         let profilePicture = UIImagePickerController()
