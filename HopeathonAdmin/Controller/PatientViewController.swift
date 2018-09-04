@@ -61,7 +61,7 @@ class PatientViewController: UIViewController {
                 
                 guard let newUser = user.value as? [String : Any] else {return}
                 print("newUser = \(newUser)")
-                tempNewData.append(("\(newUser["beratBadan"]!)", "\(newUser["timestamp"]!)", "\(newUser["tinggi"])"))
+                tempNewData.append(("\(newUser["beratBadan"]!)", "\(newUser["timestamp"]!)", "\(newUser["tinggi"]!)"))
                 print("tampUser = \(tempNewData)")
             }
             
@@ -72,7 +72,7 @@ class PatientViewController: UIViewController {
                 for newData in tempNewData {
                     
                     let newUser = UserModel(timestamp: newData.1, id: "\(tempValue0["uid"]!)", email: "\(tempValue0["email"]!)", fullName: "\(tempValue0["fullName"]!)", dateBirth: "\(tempValue0["dateBirth"]!)", gender: "\(tempValue0["gender"]!)", beratBadan: Float(newData.0)!, tinggiBadan: Float(newData.2)!)
-                    
+                    print("ini newUser = \(newUser)")
                     self.listUser.append(newUser)
                 }
                 
@@ -107,8 +107,9 @@ extension PatientViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: idCellProfile, for: indexPath) as! PatientTableViewCell
         cell.labelName.text = listUser[indexPath.row].fullName
-        cell.labelAge.text = Date().getDateNow(unixtimeInterval: listUser[indexPath.row].dateBirth)
-        cell.labelGender.text = listUser[indexPath.row].gender
+//        cell.labelAge.text = Date().getDateNow(unixtimeInterval: listUser[indexPath.row].dateBirth)
+        cell.labelAge.text = Date().setDifferenceDate(timestampPast: Int(listUser[indexPath.row].dateBirth)!)
+        cell.labelGender.text = (listUser[indexPath.row].gender == "L" ? "Laki-Laki" : "Perempuan")
         cell.backgroundColor = .red
         return cell
     }
