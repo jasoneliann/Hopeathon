@@ -145,6 +145,9 @@
                                 <state key="normal" title="REKAM MEDIS">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doRekamMedis:" destination="Uzw-8b-nD0" eventType="touchUpInside" id="8DY-Ti-bVI"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Imunisasi" translatesAutoresizingMaskIntoConstraints="NO" id="MPx-RI-BVm">
                                 <rect key="frame" x="16" y="379" width="169" height="165"/>
@@ -181,11 +184,69 @@
                         <outlet property="riwayatPenyakitView" destination="Jh2-tf-Ehc" id="ABd-u5-9h0"/>
                         <outlet property="tinggiLabel" destination="dhq-9G-isM" id="9LD-q4-6tc"/>
                         <outlet property="usiaLabel" destination="gEK-Oh-qov" id="YCS-sC-Aof"/>
+                        <segue destination="OyR-KS-0np" kind="show" identifier="segueToRekamMedis" id="335-b8-TkY"/>
+                        <segue destination="6oE-VE-uE4" kind="show" identifier="toDummy" id="qLs-sz-BLi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uK-nW-haN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2202" y="497"/>
+        </scene>
+        <!--Rekam Medis-->
+        <scene sceneID="IBE-bF-evT">
+            <objects>
+                <viewController title="Rekam Medis" id="OyR-KS-0np" customClass="RekamMedisViewController" customModule="HopeathonAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xqT-U4-dvq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P74-yO-kLE">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="OyR-KS-0np" id="pw3-Ab-jnX"/>
+                                    <outlet property="delegate" destination="OyR-KS-0np" id="llD-Cd-sME"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P74-yO-kLE" firstAttribute="leading" secondItem="OvC-FG-vbe" secondAttribute="leading" id="0C3-FW-eVL"/>
+                            <constraint firstItem="OvC-FG-vbe" firstAttribute="bottom" secondItem="P74-yO-kLE" secondAttribute="bottom" id="4ve-8i-CMC"/>
+                            <constraint firstItem="OvC-FG-vbe" firstAttribute="trailing" secondItem="P74-yO-kLE" secondAttribute="trailing" id="6wl-1f-cuQ"/>
+                            <constraint firstItem="P74-yO-kLE" firstAttribute="top" secondItem="OvC-FG-vbe" secondAttribute="top" id="yBb-7F-ciI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OvC-FG-vbe"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="P74-yO-kLE" id="ruJ-vu-sg7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ddk-Pn-d0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3042" y="499"/>
+        </scene>
+        <!--Dummy Table View Controller-->
+        <scene sceneID="gnI-MO-fyD">
+            <objects>
+                <tableViewController id="6oE-VE-uE4" customClass="DummyTableViewController" customModule="HopeathonAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="II3-r1-4fp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="6oE-VE-uE4" id="GvX-9o-Rr1"/>
+                            <outlet property="delegate" destination="6oE-VE-uE4" id="wyM-LO-Stm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="hUY-Pa-UQH">
+                        <barButtonItem key="backBarButtonItem" title=" " id="vsj-Rg-4x5"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="XdP-vi-LPx"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u8Z-8X-kmO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3037" y="1270"/>
         </scene>
         <!--Input ID-->
         <scene sceneID="vfd-Jl-IlS">
@@ -202,7 +263,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="XuprP0q1cXZJ0YBKTRb1DVaRGWD3" placeholder="19014" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebd-OU-Tbr" customClass="TextFieldDesignExt" customModule="HopeathonAdmin" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="19014" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ebd-OU-Tbr" customClass="TextFieldDesignExt" customModule="HopeathonAdmin" customModuleProvider="target">
                                 <rect key="frame" x="47" y="384" width="280" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.85445748730000004" green="0.85445748730000004" blue="0.85445748730000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -270,6 +331,6 @@
         <image name="user-3" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XrT-c3-7Lt"/>
+        <segue reference="uBb-3A-CKr"/>
     </inferredMetricsTieBreakers>
 </document>

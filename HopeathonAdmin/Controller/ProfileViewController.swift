@@ -79,6 +79,9 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+
+        
         self.profileImageView.layer.cornerRadius = profileImageView.frame.size.width / 2
         self.profileImageView.clipsToBounds = true
         self.addedProfileImage.layer.cornerRadius = addedProfileImage.frame.size.width / 2

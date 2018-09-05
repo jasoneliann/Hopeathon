@@ -18,6 +18,14 @@
 		9DE93C782FD818D35E83DB05 /* Pods_HopeathonAdmin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 938F8F28D1A4953F082C5AD8 /* Pods_HopeathonAdmin.framework */; };
 		BD24C613213E09A100B76D73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD24C612213E09A100B76D73 /* LoginViewController.swift */; };
 		BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD24C618213E145900B76D73 /* GoogleService-Info.plist */; };
+		BD58A785213F577A002FEAB1 /* RekamMedisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58A783213F577A002FEAB1 /* RekamMedisTableViewCell.swift */; };
+		BD58A786213F577A002FEAB1 /* RekamMedisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD58A784213F577A002FEAB1 /* RekamMedisTableViewCell.xib */; };
+		BD58A788213F597F002FEAB1 /* RekamMedisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58A787213F597F002FEAB1 /* RekamMedisViewController.swift */; };
+		BD58A78A213F5E88002FEAB1 /* RekamMedisModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58A789213F5E88002FEAB1 /* RekamMedisModel.swift */; };
+		BD58A78C213F6A97002FEAB1 /* DummyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58A78B213F6A97002FEAB1 /* DummyTableViewController.swift */; };
+		BD58A78F213F6B13002FEAB1 /* DummyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58A78D213F6B13002FEAB1 /* DummyTableViewCell.swift */; };
+		BD58A790213F6B13002FEAB1 /* DummyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD58A78E213F6B13002FEAB1 /* DummyTableViewCell.xib */; };
+		BD58A792213F711D002FEAB1 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD58A791213F711D002FEAB1 /* SplashViewController.swift */; };
 		BDB3361C213E222B00CB32E1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB3361B213E222B00CB32E1 /* MainTabBarController.swift */; };
 		BDB3361E213E41BD00CB32E1 /* Patient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB3361D213E41BD00CB32E1 /* Patient.storyboard */; };
 		BDB33623213E43FB00CB32E1 /* PatientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */; };
@@ -46,6 +54,14 @@
 		B21B43A564EA986BDFA6CB03 /* Pods-HopeathonAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HopeathonAdmin.release.xcconfig"; path = "Pods/Target Support Files/Pods-HopeathonAdmin/Pods-HopeathonAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		BD24C612213E09A100B76D73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BD24C618213E145900B76D73 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD58A783213F577A002FEAB1 /* RekamMedisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RekamMedisTableViewCell.swift; sourceTree = "<group>"; };
+		BD58A784213F577A002FEAB1 /* RekamMedisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RekamMedisTableViewCell.xib; sourceTree = "<group>"; };
+		BD58A787213F597F002FEAB1 /* RekamMedisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RekamMedisViewController.swift; sourceTree = "<group>"; };
+		BD58A789213F5E88002FEAB1 /* RekamMedisModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RekamMedisModel.swift; sourceTree = "<group>"; };
+		BD58A78B213F6A97002FEAB1 /* DummyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewController.swift; sourceTree = "<group>"; };
+		BD58A78D213F6B13002FEAB1 /* DummyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyTableViewCell.swift; sourceTree = "<group>"; };
+		BD58A78E213F6B13002FEAB1 /* DummyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DummyTableViewCell.xib; sourceTree = "<group>"; };
+		BD58A791213F711D002FEAB1 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		BDB3361B213E222B00CB32E1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		BDB3361D213E41BD00CB32E1 /* Patient.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Patient.storyboard; sourceTree = "<group>"; };
 		BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientTableViewCell.swift; sourceTree = "<group>"; };
@@ -100,6 +116,11 @@
 				BDB33621213E43FB00CB32E1 /* PatientTableViewCell.swift */,
 				BDB33622213E43FB00CB32E1 /* PatientTableViewCell.xib */,
 				BDF50E3D213EB61300B88E2A /* Helper.swift */,
+				BD58A783213F577A002FEAB1 /* RekamMedisTableViewCell.swift */,
+				BD58A784213F577A002FEAB1 /* RekamMedisTableViewCell.xib */,
+				BD58A789213F5E88002FEAB1 /* RekamMedisModel.swift */,
+				BD58A78D213F6B13002FEAB1 /* DummyTableViewCell.swift */,
+				BD58A78E213F6B13002FEAB1 /* DummyTableViewCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -113,6 +134,9 @@
 				2FB5A6E7213E46AC008C1A9C /* ProfileViewController.swift */,
 				CF52D17D213E51140022862D /* ScanIDViewController.swift */,
 				BDB33625213E45D600CB32E1 /* PatientViewController.swift */,
+				BD58A787213F597F002FEAB1 /* RekamMedisViewController.swift */,
+				BD58A78B213F6A97002FEAB1 /* DummyTableViewController.swift */,
+				BD58A791213F711D002FEAB1 /* SplashViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,11 +266,13 @@
 			files = (
 				BDB3361E213E41BD00CB32E1 /* Patient.storyboard in Resources */,
 				BDB33624213E43FB00CB32E1 /* PatientTableViewCell.xib in Resources */,
+				BD58A786213F577A002FEAB1 /* RekamMedisTableViewCell.xib in Resources */,
 				BDEB9B17213D7B1B009D5B27 /* LaunchScreen.storyboard in Resources */,
 				BDEB9B14213D7B1B009D5B27 /* Assets.xcassets in Resources */,
 				BD24C619213E145900B76D73 /* GoogleService-Info.plist in Resources */,
 				2F7E9965213D807500727A7C /* Profile.storyboard in Resources */,
 				2F7E9962213D804A00727A7C /* Barcode.storyboard in Resources */,
+				BD58A790213F6B13002FEAB1 /* DummyTableViewCell.xib in Resources */,
 				BDEB9B12213D7B1A009D5B27 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,20 +351,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD58A78F213F6B13002FEAB1 /* DummyTableViewCell.swift in Sources */,
 				2FB5A6E8213E46AC008C1A9C /* ProfileViewController.swift in Sources */,
 				2FB5A6ED213E4F8C008C1A9C /* TextFieldExt.swift in Sources */,
 				BD24C613213E09A100B76D73 /* LoginViewController.swift in Sources */,
 				BDB33626213E45D600CB32E1 /* PatientViewController.swift in Sources */,
+				BD58A78C213F6A97002FEAB1 /* DummyTableViewController.swift in Sources */,
 				2F7E996A213D843300727A7C /* UserModel.swift in Sources */,
 				CF52D17E213E51140022862D /* ScanIDViewController.swift in Sources */,
+				BD58A78A213F5E88002FEAB1 /* RekamMedisModel.swift in Sources */,
 				2FD5031C213EBBD2007C715B /* TextFieldDesignExt.swift in Sources */,
 				BDB3361C213E222B00CB32E1 /* MainTabBarController.swift in Sources */,
 				BDB33623213E43FB00CB32E1 /* PatientTableViewCell.swift in Sources */,
 				BDEB9B0D213D7B1A009D5B27 /* AppDelegate.swift in Sources */,
+				BD58A788213F597F002FEAB1 /* RekamMedisViewController.swift in Sources */,
 				2F7E996C213D845900727A7C /* BarcodeViewController.swift in Sources */,
 				BDF50E3E213EB61300B88E2A /* Helper.swift in Sources */,
+				BD58A785213F577A002FEAB1 /* RekamMedisTableViewCell.swift in Sources */,
 				CFCDD0E4213EACA100CC2C37 /* DetailPasienViewController.swift in Sources */,
 				2FC04C31213E85EC001A2002 /* UIButtonExt.swift in Sources */,
+				BD58A792213F711D002FEAB1 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

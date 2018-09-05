@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QJd-zl-JBn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dYC-L9-fPI">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,6 +39,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="60A-W7-cRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-264" y="584"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="9gy-dK-GA0">
+            <objects>
+                <viewController id="dYC-L9-fPI" customClass="SplashViewController" customModule="HopeathonAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmC-Jg-knU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash Screen" translatesAutoresizingMaskIntoConstraints="NO" id="mtR-bz-spt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mtR-bz-spt" firstAttribute="top" secondItem="bmC-Jg-knU" secondAttribute="top" id="2fc-gW-YNr"/>
+                            <constraint firstAttribute="bottom" secondItem="mtR-bz-spt" secondAttribute="bottom" id="RmZ-D1-Cqy"/>
+                            <constraint firstItem="mtR-bz-spt" firstAttribute="trailing" secondItem="9pg-n1-4rA" secondAttribute="trailing" id="oVR-WH-OlR"/>
+                            <constraint firstItem="mtR-bz-spt" firstAttribute="leading" secondItem="9pg-n1-4rA" secondAttribute="leading" id="zL3-fz-pHc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9pg-n1-4rA"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewSplash" destination="mtR-bz-spt" id="kdy-S7-q6K"/>
+                        <segue destination="QJd-zl-JBn" kind="show" identifier="segueToLogin" animates="NO" id="R9x-Q9-GwR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTy-IL-zRV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1970" y="149"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="kmd-eh-ZoO">
@@ -140,6 +170,7 @@
     </scenes>
     <resources>
         <image name="Logo" width="375" height="371"/>
+        <image name="Splash Screen" width="375" height="814"/>
         <image name="email-1" width="25" height="25"/>
         <image name="id-1" width="25" height="25"/>
         <image name="password-1" width="25" height="25"/>

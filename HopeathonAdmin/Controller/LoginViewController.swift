@@ -31,9 +31,17 @@ class LoginViewController: UIViewController {
         
         logInButton.addTarget(self, action: #selector(loginWithGoogle), for: .touchUpInside)
         
-        GIDSignIn.sharedInstance().signInSilently()
+//        GIDSignIn.sharedInstance().signInSilently()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
         
-
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @objc func loginWithGoogle() {

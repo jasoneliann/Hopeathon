@@ -33,8 +33,18 @@ class DetailPasienViewController: UIViewController {
     
     var userId : String?
     
+    let segueId : String = "segueToRekamMedis"
+    let segueToDummy : String = "toDummy"
+    
+    @IBAction func doRekamMedis(_ sender: UIButton) {
+        performSegue(withIdentifier: segueId, sender: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+
         self.imunisasiView.layer.cornerRadius = 15
     
        self.imunisasiView.clipsToBounds = true
@@ -47,6 +57,8 @@ class DetailPasienViewController: UIViewController {
         self.beratLabel.clipsToBounds = true
         self.tinggiLabel.layer.cornerRadius = 8
         self.tinggiLabel.clipsToBounds = true
+        
+        addGestureToImunisasi()
         
         self.medicalRecord.designButtonOne()
 
@@ -75,21 +87,41 @@ class DetailPasienViewController: UIViewController {
         readDatabase(userID: unwrappedUserId)
 //        guard let user = userModel else {return}
         
+    }
+    
+    fileprivate func addGestureToImunisasi() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        let tapGesture1 = UITapGestureRecognizer(target: self, action: #selector(handleTap1))
+        self.imunisasiView.isUserInteractionEnabled = true
+        self.riwayatPenyakitView.isUserInteractionEnabled = true
+        self.imunisasiView.addGestureRecognizer(tapGesture)
+        self.riwayatPenyakitView.addGestureRecognizer(tapGesture1)
+    }
+    
+    @objc func handleTap() {
         
+        performSegue(withIdentifier: segueToDummy, sender: "SCREEN IMUNISASI")
+        
+    }
+    
+    @objc func handleTap1() {
+        performSegue(withIdentifier: segueToDummy, sender: "Penyakit")
     }
     
     fileprivate func readDatabase(userID : String) {
         
-        print("userId = \(userID)")
+        print("userId321123 = \(userID)")
         let ref : DatabaseReference = Database.database().reference()
         
         ref.child("HistoryPatient/\(userID)").observeSingleEvent(of: DataEventType.value) { (snapshot) in
             guard let value = snapshot.value as? [String : Any] else {return}
-            
+            print("valueee123123123 = \(value)")
             let tempValue = self.convertToDictionary(value: value)
             print("hello = \(tempValue)")
             
             var tempNewData : [(String, String, String)] = [(String, String, String)]()
+            
+            print("tempValue12345 = \(tempValue)")
             
             for user in tempValue {
                 print("user = \(user)")
@@ -105,7 +137,7 @@ class DetailPasienViewController: UIViewController {
                 let tempValue0 = self.convertToDictionary(value: value0)
                 
                 for newData in tempNewData {
-                    
+                    print("masuk123123")
                     let newUser = UserModel(timestamp: newData.1, id: "\(tempValue0["uid"]!)", email: "\(tempValue0["email"]!)", fullName: "\(tempValue0["fullName"]!)", dateBirth: "\(tempValue0["dateBirth"]!)", gender: "\(tempValue0["gender"]!)", beratBadan: Float(newData.0)!, tinggiBadan: Float(newData.2)!)
                     print("ini newUserasdasdsd = \(newUser)")
                     self.userModel = newUser
@@ -138,6 +170,37 @@ class DetailPasienViewController: UIViewController {
         guard let values = value as? [String : Any] else {return [String : Any]()}
         print("ini values = \(values)")
         return values
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == segueId {
+            let dest = segue.destination as! RekamMedisViewController
+            
+            
+            if let unwrappedUserId1 = userId {
+                dest.userID = unwrappedUserId1
+            } else {
+                guard let unwrappedUserId1 = userModel else {return}
+                dest.userID = unwrappedUserId1.id
+                print("yang ini")
+            }
+        } else {
+            let dest = segue.destination as! DummyTableViewController
+            guard let unwrappedSender = sender as? String else {return}
+            
+            if unwrappedSender.contains("IMUNISASI") {
+                dest.titleA = "Imunisasi"
+            } else {
+                dest.titleA = "Riwayat Penyakit"
+            }
+            
+            dest.dummyImage = UIImage(named: unwrappedSender)
+        }
+        
+        
+        
+        
     }
     
     /*
