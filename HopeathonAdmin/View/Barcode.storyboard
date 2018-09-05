@@ -138,9 +138,12 @@
                                     <constraint firstAttribute="height" constant="40" id="epU-kv-7pg"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-u6-isR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-u6-isR">
                                 <rect key="frame" x="16" y="572" width="343" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="3HR-gi-6iV"/>
+                                    <constraint firstAttribute="width" constant="343" id="wHZ-X9-kl8"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                 <state key="normal" title="REKAM MEDIS">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -149,25 +152,29 @@
                                     <action selector="doRekamMedis:" destination="Uzw-8b-nD0" eventType="touchUpInside" id="8DY-Ti-bVI"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Imunisasi" translatesAutoresizingMaskIntoConstraints="NO" id="MPx-RI-BVm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imunisasi" translatesAutoresizingMaskIntoConstraints="NO" id="MPx-RI-BVm">
                                 <rect key="frame" x="16" y="379" width="169" height="165"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Riwayat Penyakit" translatesAutoresizingMaskIntoConstraints="NO" id="Jh2-tf-Ehc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Riwayat Penyakit" translatesAutoresizingMaskIntoConstraints="NO" id="Jh2-tf-Ehc">
                                 <rect key="frame" x="190" y="379" width="169" height="165"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="hLm-7M-1yY" firstAttribute="trailing" secondItem="w2P-as-pSu" secondAttribute="trailing" constant="138" id="15W-F9-sUP"/>
+                            <constraint firstItem="Jh2-tf-Ehc" firstAttribute="top" secondItem="qsE-t8-czB" secondAttribute="bottom" constant="24" id="7a7-oI-tFB"/>
                             <constraint firstItem="Waj-fw-6Uh" firstAttribute="centerX" secondItem="hLm-7M-1yY" secondAttribute="centerX" id="BNq-tu-Yrc"/>
                             <constraint firstItem="Waj-fw-6Uh" firstAttribute="top" secondItem="SY2-wV-Ozz" secondAttribute="bottom" constant="12" id="Di9-NW-4Oh"/>
                             <constraint firstItem="lx7-Kc-k5r" firstAttribute="centerX" secondItem="hLm-7M-1yY" secondAttribute="centerX" id="GOd-Ji-y62"/>
+                            <constraint firstItem="MPx-RI-BVm" firstAttribute="leading" secondItem="hLm-7M-1yY" secondAttribute="leading" constant="16" id="PMf-Ed-l0z"/>
                             <constraint firstItem="SY2-wV-Ozz" firstAttribute="top" secondItem="lx7-Kc-k5r" secondAttribute="bottom" constant="30" id="U3a-YJ-tdE"/>
                             <constraint firstItem="w2P-as-pSu" firstAttribute="leading" secondItem="hLm-7M-1yY" secondAttribute="leading" constant="137" id="XUw-3x-d13"/>
+                            <constraint firstItem="hLm-7M-1yY" firstAttribute="trailing" secondItem="Jh2-tf-Ehc" secondAttribute="trailing" constant="16" id="cg2-oW-OYB"/>
+                            <constraint firstItem="8AK-u6-isR" firstAttribute="top" secondItem="Jh2-tf-Ehc" secondAttribute="bottom" constant="28" id="gZ5-7J-D7t"/>
+                            <constraint firstItem="8AK-u6-isR" firstAttribute="centerX" secondItem="hLm-7M-1yY" secondAttribute="centerX" id="ggI-tv-MuK"/>
                             <constraint firstItem="SY2-wV-Ozz" firstAttribute="centerX" secondItem="hLm-7M-1yY" secondAttribute="centerX" id="ihg-cu-pVm"/>
                             <constraint firstItem="w2P-as-pSu" firstAttribute="top" secondItem="hLm-7M-1yY" secondAttribute="top" constant="34" id="njH-Nb-Hlh"/>
+                            <constraint firstItem="MPx-RI-BVm" firstAttribute="top" secondItem="dhq-9G-isM" secondAttribute="bottom" constant="24" id="qTg-8v-gvJ"/>
                             <constraint firstItem="lx7-Kc-k5r" firstAttribute="top" secondItem="w2P-as-pSu" secondAttribute="bottom" constant="8" id="uJN-Mz-bE8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hLm-7M-1yY"/>
